@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using ExampleApp.Infrastructure;
+using System.Web.Http;
 
 namespace ExampleApp
 {
@@ -6,9 +7,8 @@ namespace ExampleApp
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            config.DependencyResolver = new NinjectResolver();
 
-            // Web API routes
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

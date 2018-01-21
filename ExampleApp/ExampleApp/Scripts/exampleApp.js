@@ -1,4 +1,16 @@
 ﻿$(document).ready(function () {
+    deleteProduct = function (data) {
+        $.ajax("/api/products/" + data.ProductID, {
+            type: "DELETE",
+            success: function () {
+                products.remove(data);
+            },
+            error: function () {
+                console.log("Ocorreu um erro");
+            }
+        })
+    };
+
     getProducts = function () {
         $.ajax("/api/products", {
             success: function (data) {

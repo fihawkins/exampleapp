@@ -39,3 +39,16 @@ C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\System.Web
 C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\obj\Debug\ExampleApp.csprojResolveAssemblyReference.cache
 C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\obj\Debug\ExampleApp.dll
 C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\obj\Debug\ExampleApp.pdb
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.dll
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.Extensions.ChildKernel.dll
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.Web.Common.dll
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.Web.Mvc.dll
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\WebActivator.dll
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.pdb
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.xml
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.Extensions.ChildKernel.pdb
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.Extensions.ChildKernel.xml
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.Web.Common.pdb
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.Web.Common.xml
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.Web.Mvc.pdb
+C:\Users\filipe\Documents\GitHub\ExampleApp\ExampleApp\ExampleApp\bin\Ninject.Web.Mvc.xml
