@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Web.Http.Dependencies;
 using Ninject.Web.Common;
+using System.Net.Http.Formatting;
 
 namespace ExampleApp.Infrastructure
 {
@@ -44,6 +45,7 @@ namespace ExampleApp.Infrastructure
         {
             kernel.Bind<IRepository>().To<Repository>().InSingletonScope();
             //kernel.Bind<IRepository>().To<Repository>().InRequestScope();
+            kernel.Bind<IContentNegotiator>().To<CustomNegotiator>();
         }
     }
 }

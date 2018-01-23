@@ -1,4 +1,5 @@
 ﻿using ExampleApp.Infrastructure;
+using System.Net.Http.Formatting;
 using System.Web.Http;
 
 namespace ExampleApp
@@ -8,6 +9,8 @@ namespace ExampleApp
         public static void Register(HttpConfiguration config)
         {
             config.DependencyResolver = new NinjectResolver();
+
+            config.Services.Replace(typeof(IContentNegotiator), new CustomNegotiator());
 
             config.MapHttpAttributeRoutes();
 
