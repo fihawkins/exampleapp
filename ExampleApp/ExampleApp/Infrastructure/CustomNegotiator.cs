@@ -13,6 +13,7 @@ namespace ExampleApp.Infrastructure
 
         public override ContentNegotiationResult Negotiate(Type type, HttpRequestMessage request, IEnumerable<MediaTypeFormatter> formatters)
         {
+            //esse filtro não identifica de que navegador enviei a requisição, porque na lista tem mozilla, safari e chrome
             if (request.Headers.UserAgent.Where(x => x.Product != null && x.Product.Name.ToLower().Equals("chrome")).Count() > 0)
                 return new ContentNegotiationResult(new JsonMediaTypeFormatter(), new MediaTypeHeaderValue("application/json"));
             else

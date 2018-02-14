@@ -1,4 +1,6 @@
 ﻿using ExampleApp.Infrastructure;
+using Newtonsoft.Json;
+using System;
 using System.Net.Http.Formatting;
 using System.Web.Http;
 
@@ -10,8 +12,6 @@ namespace ExampleApp
         {
             config.DependencyResolver = new NinjectResolver();
 
-            config.Services.Replace(typeof(IContentNegotiator), new CustomNegotiator());
-
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
@@ -19,6 +19,17 @@ namespace ExampleApp
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            MediaTypeFormatter xmlFormatter = config.Formatters.XmlFormatter;
+            (xmlFormatter as XmlMediaTypeFormatter).Indent = false;
+            config.Formatters.Remove(xmlFormatter);
+            config.Formatters.Insert(0, xmlFormatter);
+
+            //JsonMediaTypeFormatter jsonFormatter = config.Formatters.JsonFormatter;
+            //jsonFormatter.Indent = true;
+            //jsonFormatter.SerializerSettings.DateFormatHandling = DateFormatHandling.MicrosoftDateFormat;
+            //jsonFormatter.SerializerSettings.StringEscapeHandling = StringEscapeHandling.EscapeHtml;
+            //jsonFormatter.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
         }
     }
 }
